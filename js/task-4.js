@@ -1,34 +1,33 @@
-function getShippingCost(country){
-    let delCountry;
-    let price;
-    switch (country) {
-        case "China":{
-            delCountry = country;
-            price = 120;
-            break;
-        }
-        case "Chile":{
-            delCountry = country;
-            price = 250;
-            break;
-        }
-          case "Australia":{
-            delCountry = country;
-            price = 170;
-            break;
-        }
-        case "Jamaica":{
-                delCountry = country;
-                price = 120;
-                break;
-        }
-        
-        default:{
-        return "Sorry, there is no delivery to your country";    
-        }
-
+function getShippingCost(country) {
+  let delCountry;
+  let price;
+  switch (country) {
+    case "China": {
+      delCountry = country;
+      price = 100;
+      break;
     }
-    return "Shipping "+ delCountry + "to will cost " + price + " credits";
+    case "Chile": {
+      delCountry = country;
+      price = 250;
+      break;
+    }
+    case "Australia": {
+      delCountry = country;
+      price = 170;
+      break;
+    }
+    case "Jamaica": {
+      delCountry = country;
+      price = 120;
+      break;
+    }
+
+    default: {
+      return "Sorry, there is no delivery to your country";
+    }
+  }
+  return `Shipping ${delCountry} to will cost ${price} credits`;
 }
 
 // China — 100 кредитів
